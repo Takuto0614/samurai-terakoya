@@ -1,0 +1,28 @@
+.text-pink{
+    color:rgb(255, 192, 203);
+    text-align:center;
+}
+.text-blue{
+    color:skyblue;
+    text-align:center;
+}
+.decoration{
+    text-align:center;
+    font-size:2rem;
+    letter-spacing:1.2em;
+    border-bottom:solid 3px rgb(115,115,114);
+    text-shadow:10px 10px 10px gray;
+}
+.google-fonts{
+    font-family: 'Josefin Sans', sans-serif;
+}
+#parent p {
+    font-weight: bold;
+    text-align:center;
+  }
+p{
+    text-align: center;
+}
+html{
+    font-size:20px;
+}
