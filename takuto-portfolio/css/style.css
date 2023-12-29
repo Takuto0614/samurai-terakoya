@@ -1,0 +1,496 @@
+/*================
+ PC用のスタイル 
+=================*/
+
+@media screen and (min-width: 768px)
+{
+
+/* 横幅設定 */
+  body {
+    max-width: 100%;
+    margin: 0 auto 0 auto;
+    background-color: #262625;
+    font-family: "Hiragino Mincho ProN", serif;
+  }
+  
+
+  .title {
+    color: white;
+    font-size: 40px;
+  }
+
+  .container {
+    
+    margin: 0 auto;
+    padding: 0 200px;
+  }
+/*--------------------------------
+ヘッダー
+---------------------------------*/
+.header {
+    position: fixed;
+    z-index: 1;
+  }
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+  }
+  .header > .container > #nav-pc {
+    margin-left: 700px;
+    display: flex;
+  }
+  .header > .container > #nav-pc > a {
+    font-size: 30px;
+    margin-left: 40px;
+  }
+  
+  /* ナビゲーションのリンクの装飾設定 */
+  #nav-pc > a {
+    text-decoration: none;
+    margin-left: 150px;
+  }
+  #nav-pc > a:link {
+    color: white;
+  }
+  #nav-pc > a:visited {
+    color: white;
+  }
+  #nav-pc > a:active {
+    color: white;
+  }
+  /*スマホ用ナビを非表示*/
+  #nav-sp, #menu-sp{
+    display:none;
+}
+
+  /*main-first view*/
+  .mv > img {
+    width : 100%;
+  }
+
+/*--------------------------------
+ plofile
+---------------------------------*/
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 0 auto;
+  }
+  .profile-img {
+    width: 30%;
+    margin-right: 100px;
+    
+  }
+  .profile-img img {
+    
+    width: 100%;
+    margin-right: 30px;
+  }
+  .profile-body {
+    flex: 1;
+  }
+  
+  .profile-body .kanji-name {
+    font-size: 30px;
+    margin-bottom: 300px;
+    color: white;
+  }
+  .profile-body .english-name {
+    font-size: 15px;
+    color: white;
+  }
+  .profile-body .introduction{
+    color: white;
+  }
+
+
+  .profile-body p:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .btn41-43 {
+    padding: 10px 25px;
+    font-family: "Hiragino Mincho ProN", serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    margin: 40px 450px;
+    text-decoration: none;
+  }
+  
+  .btn-43 {
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 1;
+    color: white;
+  }
+  
+  .btn-43:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-43:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .btn-43:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+
+
+/*--------------------------------
+ Works
+---------------------------------*/
+.works-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -100px;
+    margin-left: -50px;
+  }
+  
+  .works-item {
+    width:  calc(32% - 50px);/* 32%の幅から50pxのマージンを引いた値に設定 */
+    margin: 0 25px 50px; /* 上下には50pxのマージンを追加 */
+    color: #333;
+  }
+  
+  .works-item:hover {
+    opacity: .9;
+  }
+  
+  .works-item:nth-of-type(3n) {
+    margin-right: 0;
+  }
+  
+  .works-img img {
+    border: 1px solid #e6e6e6;
+    max-width: 350px;
+    max-height: 400px;
+  }
+  
+  .works-name {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-top: 0px;
+  }
+  
+  .works-info {
+    font-size: 10px;
+    color: white;
+    margin-top: 5px;
+  }
+  
+  /*contact*/
+  .label-name {
+    color: white;
+  }
+  input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px;
+    resize: vertical 
+  }
+  
+  input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    margin-left: 450px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .button {
+    display       : inline-block;
+    font-size     : 18px;        /* 文字サイズ */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 10px 28px;   /* 余白       */
+    background    : #ffffff;     /* 背景色     */
+    color         : #000000;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    opacity       : 0.8;         /* 透明度     */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 4px 4px 5px #666666;  /* 影の設定 */
+    font-family: "Hiragino Mincho ProN", serif;
+    margin-bottom: 30px;
+    margin-left: 200px;
+  }
+  .button:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+    opacity       : 1;           /* カーソル時透明度 */
+  }
+  
+  /*footer*/
+  footer{
+    background-color:#353533;
+    justify-content: space-between;
+  }
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    
+ }
+ .menu > a {
+    margin-left: 40px;
+    margin-top: 10px;
+ }
+ .copyright {
+    font-size: 10px;
+    margin-left: 600px;
+    color: white;
+  }
+  .menu #footer-link {
+    margin-top: 45px;
+    margin-right: 20px;
+  }
+  .menu #footer-link > a {
+    font-size: 30px;
+    margin-left: 40px;
+  }
+  .menu #footer-link{
+    margin-left: 700px;
+    display: flex;
+  }
+  
+  /* ナビゲーションのリンクの装飾設定 */
+  #footer-link > a {
+    text-decoration: none;
+    margin-left: 150px;
+  }
+  #footer-link > a:link {
+    color: white;
+  }
+  #footer-link > a:visited {
+    color: white;
+  }
+  #footer-link > a:active {
+    color: white;
+  }
+
+  /*profile.html*/
+
+  /*--------------------------------
+ plofile
+---------------------------------*/
+.profile2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #profile2 > .container {
+    margin-top: 150px;
+  }
+  .profile2-img {
+    width: 30%;
+    margin-right: 100px;
+    
+  }
+  .profile2-img img {
+    
+    width: 100%;
+    margin-right: 30px;
+  }
+  .profile2-body {
+    flex: 1;
+  }
+  
+  .profile2-body .kanji-name {
+    font-size: 30px;
+    margin-bottom: 300px;
+    color: white;
+  }
+  .profile2-body .english-name {
+    font-size: 15px;
+    color: white;
+  }
+  .profile2-body .introduction{
+    color: white;
+  }
+
+
+  .profile2-body p:not(:last-child) {
+    margin-bottom: 30px;
+  }
+/*--------------------------------
+ strength
+---------------------------------*/
+.strength section {
+    margin-top: 100px;
+}
+.st-list {
+    display: flex;
+}
+.st-content{
+    color: white;
+}
+.st-name{
+    font-size: 35px;
+}
+.st-list > .st-detail {
+    display: flex;
+}
+#strength .st-list .st-detail1 {
+    margin-top: 40px; 
+    margin-left: 200px;
+    padding: 10px 0; 
+}
+#strength .st-list .st-detail2 {
+    margin-top: 40px; 
+    margin-left: 90px;
+    padding: 10px 0; 
+}
+#strength .st-list .st-detail3 {
+    margin-top: 40px; 
+    margin-left: 265px;
+    padding: 10px 0; 
+}
+  
+/*--------------------------------
+ skills
+---------------------------------*/
+
+#skills img {
+    width: 100px;
+    height: auto; 
+    margin-right: 20px;
+}
+.skills-photo{
+    display: flex;
+    margin-left: 40px;
+}
+
+/*--------------------------------
+ career
+---------------------------------*/
+#career p {
+    color: white;
+    font-size: 20px;
+}
+.c-part{
+    display: flex;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.c-content {
+    margin-left: 100px;
+}
+/*--------------------------------
+ my hobby
+---------------------------------*/
+.mh-content{
+    color: white;
+}
+.mh-name {
+    font-size: 30px;
+}
+.mh-detail{
+    font-size: 18px;
+}
+
+/*works.html*/
+.works-firstview > img {
+    width: 60%;
+    margin-left: 300px;
+    margin-top: 200px;
+}
+.works-title {
+    color: white;
+    margin-left: 630px;
+}
+.works-content{
+    color: white;
+    margin-left: 300px;
+    margin-top: 30px;
+}
+.works-ex {
+    margin-top: 50px;
+}
+.works-secondview > img {
+    width: 60%;
+    margin-left: 300px;
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+.btn44-46 {
+    padding: 10px 25px;
+    font-family: "Hiragino Mincho ProN", serif;
+    font-weight: 500;
+    background: transparent;
+    outline: none !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    margin-left: 650px;
+    margin-bottom: 50px;
+    text-decoration: none;
+  }
+  
+  .btn-44 {
+    border: 2px solid rgb(255, 255, 255);
+    z-index: 1;
+    color: white;
+  }
+  
+  .btn-44:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  
+  .btn-44:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .btn-44:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+}
+
+/*================
+ スマホ用のスタイル 
+=================*/
+@media screen and (max-width: 767px) {
+  body {
+    min-width: 375px;
+    margin: 0;
+}
+  #menu-sp{
+    display:block;
+
+}
+#nav-sp {
+    display:none;
+}
+ #nav-pc {
+    display:none;
+}
+}
