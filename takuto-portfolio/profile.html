@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset ="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>TAKUTO PORTFOLIO</title>
+        <!--変更の余地あり-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+        <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+    </head>
+
+<body>
+  <!-- header -->
+
+  <header class="header">
+    <div class="container">
+    <!--ロゴ-->
+    <a href="index.html" id="logo"><img src="img/logo_main.png" alt="トップページに戻る"></a>
+    <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <a href="index.html#works">WORKS</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="index.html#contact">CONTACT</a> 
+      </nav>
+    </div>
+    
+    <!--スマホ用メニューボタン-->
+    <img id="menu-sp" src="img/menu-button.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+    <!--スマホ用ナビゲーション-->
+    <nav id="nav-sp">
+        <img id="close" src="img/close-button.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display='none'">
+        
+        <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display='none'">
+            <img src="img/logo_main.png" alt="トップページに戻る"></a>
+        <a href="index.html#works" onclick="document.getElementById('nav-sp').style.display='none'">WORKS</a>
+        <a href="profile.html" onclick="document.getElementById('nav-sp').style.display='none'">PROFILE</a>
+        <a href="index.html#contact" onclick="document.getElementById('nav-sp').style.display='none'" >CONTACT</a> 
+      </nav>
+    
+  </header>
+ <!--main ここから-->
+ <main>
+    
+<!-- profile -->
+<section class="profile2 section" id="profile2">
+    <div class="container">
+  <h2 class="title">PLOFILE</h2>
+  <div class="profile">
+    <p class="profile-img">
+      <img src="img/profile.jpg" alt="profile">
+    </p>
+    <div class="profile-body">
+     <p class="english-name">
+        HIGUCHI TAKUTO
+     </p>
+      <p class="kanji-name">
+        樋口 拓翔
+      </p>
+      <p class="introduction">
+        2001年愛知県生まれ。名古屋在住。2023年の4月から3ヶ月のフィリピン留学を得て、同年の10月からWEBサイトの制作を学びました。
+       お客様の要望に合わせたWEBサイトを精一杯力を尽くして制作させていただきます。お気軽にご相談ください。
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+<!-- /profile -->
+<!--strength-->
+<section class="strength section" id ="strength">
+    <div class="container">
+        <h2 class="title">STRENGTH</h2>
+        <ol class="st-content">
+            <li>
+                <div class="st-list">
+                    <p class="st-name">ambition</p>
+                    <p class="st-detail1">私には向上心があり新しい知識やスキルを習得することに抵抗がありません。これにより良質なサービスを提供することができます。</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="st-list">
+                    <p class="st-name">communication</p>
+                    <p class="st-detail2">相手と円滑なコミュニケーションを築くことで、要求や問題を把握し、解決策を提案することができます。そして信頼関係を構築し、長期的なパートナーシップを築くことができます。</p>
+                </div>
+            </li>
+
+            <li>
+                <div class ="st-list">
+                    <p class="st-name">spirit</p>
+                    <p class="st-detail3">常にクライアントファーストの精神で制作しています。クライアントのニーズや目標を最優先に考え、彼らの成功をサポートすることに迅速かつ効果的に応えるために、柔軟な対応力と素早い行動力を持っています。</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>
+<!--/strength-->
+<!--skills-->
+<section class="skills section" id="skills">
+    <div class="container">
+        <h2 class="title">SKILLS</h2>
+        <div class="skills-photo">
+            <div class="first-line">
+                <a><img src="img/skills/html.png" alt="htmlのアイコン"></a>
+                <a><img src="img/skills/css.png" alt="css"></a>
+                <a><img src="img/skills/js.png" alt="javascriptのアイコン"></a>
+                <a><img src="img/skills/jquery.png" alt="jqueryのアイコン"></a>
+            </div>
+            <div class="second-line">
+                <a><img src="img/skills/wordpress.png" alt="wordpressのアイコン"></a>
+                <a><img src="img/skills/photoshop.png" alt="phptoshopのアイコン"></a>
+                <a><img src="img/skills/vscode.png" alt="vscodeのアイコン"></a>
+                <a><img src="img/skills/php.png" alt="phpのアイコン"></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/skills-->
+<!--career-->
+<section class="career section" id="career">
+    <div class="container">
+        <h2 class="title">CAREER</h2>
+        <div>
+            <div class="c-part">
+                <p class="c-time">2020/3</p>
+                <p class="c-content">高校を卒業</p>
+            </div>
+            <div class="c-part">
+                <p class="c-time">2021/9</p>
+                <p class="c-content">派遣社員としてトヨタ車体（株）に入社</p>
+            </div>
+            <div class="c-part"> 
+                <p class="c-time">2022/4</p>
+                <p class="c-content">（株）DENSOに移動</p>
+            </div>
+            <div class="c-part">
+                <p class="c-time">2023/4</p>
+                <p class="c-content">フィリピン（SMEAG GLOBAL EDUCATION）に留学</p>
+            </div>
+            <div class="c-part">
+                <p class="c-time">2023/10</p>
+                <p class="c-content">プログラミングへの興味からSAMURAI ENGINNERに入学</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/career-->
+<!--my hobby-->
+<section class="my-hobby section" id ="my-hobby">
+    <div class="container">
+        <h2 class="title">MY HOBBY</h2>
+        <ol class="mh-content">
+            <li>
+                <div class="mh-list">
+                    <p class="mh-name">アニメ鑑賞</p>
+                    <p class="mh-detail">子供の時からアニメが大好きで、特に好きなアニメは進撃の巨人です。戦闘シーンの派手さだけではなく、たくさんの伏線がはられており物語が進むにつれてそれが回収されるのが本当に面白いです。</p>
+                </div>
+            </li>
+
+            <li>
+                <div class="mh-list">
+                    <p class="mh-name">ゲーム</p>
+                    <p class="mh-detail">最近はマリオカートにハマっています。走るコースによって戦略、戦術を考えなければならない奥の深さがあります。中学生の時にやっていたモンスターハンター４Gでは合計で２０００時間以上プレイしました。</p>
+                </div>
+            </li>
+
+            <li>
+                <div class ="mh-list">
+                    <p class="mh-name">剣道</p>
+                    <p class="mh-detail">高校2年生まで剣道をやっていました。（剣道歴7年 二段）今は選手として関わることはないのですが試合を見るのが好きで、YouTubeで毎日試合映像を見ています。</p>
+                </div>
+            </li>
+        </ol>
+    </div>
+</section>
+<!--/my hobby-->
+  </main>
+  
+  <!--footerここから-->
+  <footer>
+    <div class="menu">
+    <!-- ロゴ -->
+    <a href="index.html" id="logo"><img src="img/logo_main.png" alt="トップページに戻る"></a>
+    <!-- PC用ナビゲーション -->
+    <nav id ="footer-link">
+      <a href="index.html#works">WORKS</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="index.html#aboutus">CONTACT</a> 
+    </nav>
+    </div>
+    <div class="copyright">
+        All Rights Reserved 2023 &copy;Takuto Higuchi
+    </div>
+   </footer>
+   <!--footerここまで-->
+</body>
+</html>

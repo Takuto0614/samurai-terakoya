@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset ="utf-8" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>TAKUTO PORTFOLIO</title>
+
+        <!--変更の余地あり-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+        <link href="css/ress.css" media="all" rel="stylesheet" type="text/css" />
+        <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+    </head>
+
+<body>
+   <!-- header -->
+
+   <header class="header">
+    <div class="container">
+    <!--ロゴ-->
+    <a href="index.html" id="logo"><img src="img/logo_main.png" alt="トップページに戻る"></a>
+    <!-- PC用ナビゲーション -->
+      <nav id="nav-pc">
+        <a href="index.html#works">WORKS</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="index.html#contact">CONTACT</a> 
+      </nav>
+    </div>
+    
+    <!--スマホ用メニューボタン-->
+    <img id="menu-sp" src="img/menu-button.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-sp').style.display = 'block'">
+    <!--スマホ用ナビゲーション-->
+    <nav id="nav-sp">
+        <img id="close" src="img/close-button.png" alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-sp').style.display='none'">
+        
+        <a id="logo-sp" href="index.html" onclick="document.getElementById('nav-sp').style.display='none'">
+            <img src="img/logo_main.png" alt="トップページに戻る"></a>
+        <a href="index.html#works" onclick="document.getElementById('nav-sp').style.display='none'">WORKS</a>
+        <a href="profile.html" onclick="document.getElementById('nav-sp').style.display='none'">PROFILE</a>
+        <a href="index.html#contact" onclick="document.getElementById('nav-sp').style.display='none'" >CONTACT</a> 
+      </nav>
+    
+  </header>
+
+  <!--main ここから-->
+        <main>
+            <div class="mv">
+                <img src =img/main.png   alt="toppageのデザイン">
+            </div>
+  <!-- profile -->
+      <section class="profile section" id="profile">
+        <div class ="container">
+          <h2 class="title">PLOFILE</h2>
+          <div class="profile">
+            <p class="profile-img">
+              <img src="img/profile.jpg" alt="profile">
+            </p>
+            <div class="profile-body">
+             <p class="english-name">
+                HIGUCHI TAKUTO
+             </p>
+              <p class="kanji-name">
+                樋口 拓翔
+              </p>
+              <p class="introduction">
+                2001年愛知県生まれ。名古屋在住。2023年の4月から3ヶ月のフィリピン留学を得て、同年の10月からWEBサイトの制作を学びました。
+               お客様の要望に合わせたWEBサイトを精一杯力を尽くして制作させていただきます。お気軽にご相談ください。
+              </p>
+            </div>
+          </div>
+          <a href="profile.html" class="btn41-43 btn-43">
+            VIEW MORE
+          </a>
+        </div>
+       </section>
+  <!-- /profile -->
+
+  <!--works-->
+  <section class="works section" id="works">
+    <div class="container">
+      <h2 class="title">WORKS</h2>
+      <div class="works-list">
+        <a class="works-item" href="works-1.html" id="first-line">
+          <div class="works-img"><img src="img/works/html1.png" alt="html1" /></div>
+          <p class="works-name">コーポレートサイト</p>
+          <p class="works-info">HTML/CSS</p>
+        </a>
+        
+        <a class="works-item" href="works-2.html" id="first-line">
+          <div class="works-img"><img src="img/works/wordpress1.png" alt="WordPress" /></div>
+          <p class="works-name">Hair Tech</p>
+          <p class="works-info">wordpress</p>
+        </a>
+        
+        <a class="works-item" href="works-3.html" id="second-line">
+          <div class="works-img"><img src="img/works/wordpress2.png" alt="AdobeXD" /></div>
+          <p class="works-name">SAMURAI UNIVERSITY</p>
+          <p class="works-info">wordpress</p>
+        </a>
+        
+        <a class="works-item" href="works-4.html" id="second-line">
+            <div class="works-img"><img src="img/works/photoshop.png" alt="html1" /></div>
+            <p class="works-name">プログラミングスクールのバナー</p>
+            <p class="works-info">Photoshop</p>
+        </a>
+
+        <a class="works-item" href="works-5.html" id="third-line">
+            <div class="works-img"><img src="img/works/photoshop2.jpg" alt="html1" /></div>
+            <p class="works-name">プログラミングスクールのバナー</p>
+            <p class="works-info">Photoshop</p>
+        </a>
+
+        <a class="works-item" href="works-6.html" id="third-line">
+            <div class="works-img"><img src="" alt="TakutoHiguchi Portfolio" /></div>
+            <p class="works-name">Takuto Higuchi Portfolio</p>
+            <p class="works-info">HTML/CSS/Javascript</p>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+  <!--/works-->
+  <!--contact-->
+  <section class="contact section"  id ="contact">
+    <div class="container">
+        <h2 class="title">CONTACT</h2>
+        <form action="sendmail.php" method="post">
+      
+          <label class ="label-name">Name</label>
+          <input type="text" id="fname" name="name" placeholder="山田太郎">
+      
+          <label class="label-name">E-mail</label>
+          <input type="text" id="Ename" name="e-mail" placeholder="tarou@gmail.com">
+      
+          <label class ="label-name">content</label>
+          <textarea id="subject" name="subject" placeholder="〇〇のデザインの制作をお願いしたいです。" style="height:200px"></textarea>
+      
+          <input type ="submit" value="Submit" class="button">
+        
+       </form>
+      </div>
+  </section>
+  <!--/contact-->
+
+        </main>
+  <!--footerここから-->
+  <footer>
+    <div class="menu">
+    <!-- ロゴ -->
+    <a href="index.html" id="logo"><img src="img/logo_main.png" alt="トップページに戻る"></a>
+    <!-- PC用ナビゲーション -->
+    <nav id ="footer-link">
+      <a href="index.html#works">WORKS</a>
+      <a href="profile.html">PROFILE</a>
+      <a href="index.html#aboutus">CONTACT</a> 
+    </nav>
+    </div>
+    <div class="copyright">
+        All Rights Reserved 2023 &copy;Takuto Higuchi
+    </div>
+   </footer>
+   <!--footerここまで-->
+</body>
+</html>
